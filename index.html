@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Origma - Your Application Development Partner</title>
 </head>
@@ -22,6 +24,7 @@
                 
             </ul>
             <img src="/images/hamburger.png" alt="menu dropdown" class="header__hamburger">
+           
         </nav>
     </header>
     <main class="main">
@@ -33,22 +36,28 @@
         </div>
         <div>
             <Section class="main__purpose">
+                <h4></h4>
 
+                <h6>We partner with businesses of all sizes to further their business needs 
+                    software development services , tailored to your business needs by leveraging our experience in 
+                    operations and process improvement to deliver tangible results</h6>
+                <p>Click Here -  {{NEEDS A/B TESTING}}</p>
             </Section>
         </div>
         <div>
             <section class="main__services">
                 <h2>Application Development</h2>
+                    <h6></h6>
                 <h2 >Front-End Development</h2>
 
             </section>
         </div>
         <div>
             <section class="main__techstack">
-                <img src="/images/python-logo-master-v3-TM-flattened.png" alt="Python Logo" class="main__pythonlogo techlogo">
-                <img src="/images/django-logo-positive.png" alt="Django logo" class="main__djangologo techlogo">
-                <img src="/images/Flask_logo.svg" alt="Flask logo" class="main__flasklogo techlogo">
-                <img src="/images/DO_Logo_Horizontal_Blue.png" alt="DigitalOcean Logo" class="main__dologo techlogo">
+                <img src="/images/python-logo-master-v3-TM-flattened.png" alt="Python Logo" class="main__techlogo ">
+                <img src="/images/django-logo-positive.png" alt="Django logo" class="main__techlogo ">
+                <img src="/images/Flask_logo.svg" alt="Flask logo" class="main__techlogo ">
+                <img src="/images/DO_Logo_Horizontal_Blue.png" alt="DigitalOcean Logo" class="main__techlogo ">
             </section>
         </div>
         <div></div>
@@ -56,7 +65,10 @@
     </main>
     <footer class="footer">
         <img src="/images/origma_logo.png" alt="" class="footer__logo logo">
-        
+        <div class="footer__contact">
+            <h4 >St Louis Park, MN</h4>
+            <h4 >devteam@origma.io</h4>
+        </div>
     </footer>
 </body>
 </html>
