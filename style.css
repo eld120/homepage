@@ -81,6 +81,22 @@ html, body {
   min-height: 100vh;
 }
 
+.link {
+  text-decoration: none;
+}
+
+button {
+  padding: 0.75rem;
+  border-radius: 0.8rem;
+  background-color: #30A7FD;
+  border: solid #30A7FD;
+}
+
+button:hover {
+  background-color: #6ac1ff;
+  border: solid white;
+}
+
 .header {
   display: flex;
   background-color: #0C293D;
@@ -124,6 +140,12 @@ html, body {
   display: inline-block;
   width: 20rem;
   margin-inline: auto;
+}
+.main__link {
+  text-decoration: none;
+}
+.main__link:hover {
+  color: white;
 }
 
 .footer {
