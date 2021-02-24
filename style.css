@@ -99,8 +99,7 @@ button:hover {
 
 .header {
   display: flex;
-  background-color: #0C293D;
-  /*background: radial-gradient( $blue-backup 50%, white  , $blue-backup 80% );*/
+  background: radial-gradient(#295270 70%, #2e3235 99%);
   padding: 2rem;
 }
 .header__nav {
@@ -125,9 +124,13 @@ button:hover {
 }
 
 .logo {
-  height: 5.75rem;
-  width: 5rem;
-  padding: 1rem;
+  height: 11rem;
+  width: 8rem;
+  transition: filter 250ms ease-in;
+}
+
+.logo:hover {
+  filter: drop-shadow(0px 1px 2px white);
 }
 
 .main {
@@ -135,6 +138,23 @@ button:hover {
   flex-direction: column;
   padding-bottom: 18rem;
   min-height: 100vh;
+}
+.main__herocontain {
+  display: grid;
+  width: 50vw;
+  height: 50vh;
+}
+.main__hero {
+  width: 90vw;
+  background: url(/images/terminal.svg);
+  background-repeat: no-repeat;
+  padding-inline: 1.5rem;
+  background-size: contain;
+  background-position: center;
+}
+.main__hero > * {
+  color: white;
+  margin-top: 8rem;
 }
 .main__techlogo {
   display: inline-block;
@@ -161,10 +181,6 @@ button:hover {
   margin-top: auto;
   margin-bottom: auto;
   color: white;
-}
-.footer__logo {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
