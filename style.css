@@ -99,7 +99,6 @@ button:hover {
 
 .header {
   display: flex;
-  background: linear-gradient(170deg, #2e3235, #0C293D);
   padding: 2rem;
 }
 .header__nav {
@@ -131,6 +130,14 @@ button:hover {
 
 .logo:hover {
   filter: drop-shadow(0px 1px 2px white);
+}
+
+.background {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .main {
@@ -188,6 +195,7 @@ button:hover {
   height: 18rem;
   margin-top: auto;
   background: linear-gradient(170deg, #0C293D, #2e3235);
+  background: linear-gradient(170deg, #2e3235, #0C293D);
 }
 .footer__contact {
   display: flex;
