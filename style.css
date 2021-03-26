@@ -80,6 +80,8 @@ html, body {
   position: relative;
   min-height: 100vh;
   color: white;
+  background: #0C293D;
+  z-index: -20;
 }
 
 .link {
@@ -91,6 +93,7 @@ button {
   border-radius: 0.8rem;
   background-color: #30A7FD;
   border: solid #30A7FD;
+  z-index: 20;
 }
 
 button:hover {
@@ -138,14 +141,15 @@ button:hover {
 }
 
 .logo:hover {
-  filter: drop-shadow(0px 1px 2px white);
+  filter: drop-shadow(0px 1px 1px #30A7FD);
 }
 
 .background {
   width: 100vw;
+  top: 0;
   position: absolute;
   left: 0;
-  top: -15rem;
+  background-size: cover;
   z-index: -1;
 }
 
@@ -162,6 +166,9 @@ button:hover {
 }
 .main__hero {
   height: 40vh;
+  z-index: 2;
+  position: relative;
+  width: 100vw;
 }
 .main__terminal {
   width: 90vw;
@@ -169,18 +176,23 @@ button:hover {
   z-index: 0;
   filter: drop-shadow(0px 0px 5px black);
 }
-.main__hero > * {
-  color: white;
-}
 .main__herocontent {
+  width: 100%;
+  font-size: 19px;
   z-index: 5;
   left: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
   line-height: 1;
   top: 4rem;
   position: absolute;
 }
+.main__herocontent > h3 {
+  text-align: center;
+  line-height: 1.75;
+}
 .main__purpose {
-  background: #0C293D;
   padding: 3rem 5rem;
 }
 .main__techlogo {
@@ -208,8 +220,7 @@ button:hover {
   width: 100%;
   height: 18rem;
   margin-top: auto;
-  background: linear-gradient(170deg, #0C293D, #2e3235);
-  background: linear-gradient(170deg, #2e3235, #0C293D);
+  background: linear-gradient(180deg, #0C293D 30%, #2e3235);
 }
 .footer__contact {
   display: flex;
