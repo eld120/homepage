@@ -79,6 +79,7 @@ html, body {
   height: 100vh;
   position: relative;
   min-height: 100vh;
+  color: white;
 }
 
 .link {
@@ -110,9 +111,15 @@ button:hover {
   padding: 1rem;
   height: 100px;
   width: 100px;
+}
+.header__ul {
   margin-left: auto;
+  display: flex;
+  align-self: center;
+  margin-right: 8rem;
 }
 .header__li {
+  margin-inline: 2rem;
   list-style: none;
 }
 .header__a {
@@ -125,6 +132,8 @@ button:hover {
 .logo {
   height: 11rem;
   width: 8rem;
+  padding-top: 50px;
+  margin-left: 12rem;
   transition: filter 250ms ease-in;
 }
 
@@ -136,7 +145,7 @@ button:hover {
   width: 100vw;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -15rem;
   z-index: -1;
 }
 
@@ -170,6 +179,10 @@ button:hover {
   top: 4rem;
   position: absolute;
 }
+.main__purpose {
+  background: #0C293D;
+  padding: 3rem 5rem;
+}
 .main__techlogo {
   display: inline-block;
   width: 20rem;
@@ -177,9 +190,10 @@ button:hover {
 }
 .main__link {
   text-decoration: none;
+  color: white;
 }
 .main__link:hover {
-  color: white;
+  color: black;
 }
 .main__button {
   margin: 2rem auto;
