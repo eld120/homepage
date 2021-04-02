@@ -34,21 +34,12 @@
             <section class="header__hero">
                 
                 <!-- <img src="/images/terminal.svg" alt="" class="main__terminal"> -->
-                <div class="header__herocontent">
+                <div class="header__herocontent typewriter">
                     
+                    <!-- <h1 id="txt1">Application Development</h1>
+                    <h1 id="txt2">UX/UI Design</h1> -->
+                    <h1 id="txt3">Digital Solutions Simplified.</h1>
 
-
-                    <h1>
-                        <div class="typewrite" data-period="2000" 
-                        data-type='[ "Digital solutions simplified","Application Development", "UX/UI Design" ]'>
-                            <span class="wrap"></span>
-                        </div>
-                    </h1>
-  
-  
-                    <h1 id="txt1"></h1>
-                    <h1 id="txt2"> </h1>
-                    <h1 id="txt3"> </h1>
                     <button class="header__button button"><a class="header__link link" href="#">CONTACT</a> </button>
                  </div>
                  
@@ -141,12 +132,12 @@
             </Section>
         </div>
         <div>
-            <section class="main__services">
+            <!-- <section class="main__services">
                 <h2>Application Development</h2>
                     <h6></h6>
                 <h2>Front-End Development</h2>
 
-            </section>
+            </section> -->
         </div>
         <div>
             <section class="main__techstack">
@@ -168,7 +159,32 @@
                 <h6>DigitalOcean</h6>
             </section>
             <section class="main__contact">
-                <form action="" class="main__form"></form>
+                <form id="contactForm">
+                    <p class="main__name-field">
+                      <label>Name <span>*</span></label>
+                      <input type="text" name="name" id="name" required>
+                    </p>
+                    <p class="main__company-field">
+                      <label>Company</label>
+                      <input type="text" name="company" id="company">
+                    </p>
+                    <p class="main__email-field">
+                      <label>Email <span>*</span></label>
+                      <input type="email" name="email" id="email" required>
+                    </p>
+                    <p class="main__phone-field">
+                      <label>Phone</label>
+                      <input type="text" name="phone" id="phone">
+                    </p>
+                    <p class="main__message-field full">
+                      <label>Message</label>
+                      <textarea name="message" rows="5" id="message"></textarea>
+                    </p>
+                    <p class="main__required-field">Required field <span>*</span></p>
+                    <p class="main__submit-button">
+                      <button type="submit">Submit</button>
+                    </p>
+                  </form>
                 
             </section>
         </div>
