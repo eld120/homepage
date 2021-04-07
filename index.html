@@ -40,7 +40,7 @@
                     <h1 id="txt2">UX/UI Design</h1> -->
                     <h1 id="txt3">Digital Solutions Simplified.</h1>
 
-                    <button class="header__button button"><a class="header__link link" href="#">CONTACT</a> </button>
+                    <button onclick="location.href='#contactForm';" class="header__button button"><a class="header__link link" href="#contactForm">Work with Us</a> </button>
                  </div>
                  
                 
@@ -60,16 +60,7 @@
                 Business Requirements:
                     
                 -->
-
-                <h4>We create digital solutions that deliver value.</h4>
-                    
-                    <h6>UX/UI Design</h6>
-                    <h6>Web Application Development</h6>
-                    <h6>Website hosting</h6>
-                    <h6>Staff Augmentation</h6>
-                    <h6>CMS Development</h6>
-
-                <h4>Industries</h4>
+                    <h4>Industries</h4>
                     <h6>Bicycle/Outdoor</h6>
                     <h6>Retail/Wholesale</h6>
                     <h6>Logistics/Operations</h6>
@@ -128,7 +119,7 @@
                     to deliver long term value to our partners in the Retail/Wholesale and Outdoor industries. 
                 
                 </h6>
-                <p>Get Started</p>
+                <button onclick="location.href='#contactForm';" class="main__button button"><a class="main__link link" href="#contactForm">Work with Us</a> </button>
             </Section>
         </div>
         <div>
@@ -141,33 +132,72 @@
         </div>
         <div>
             <section class="main__techstack">
-                <h3>Our Tech Stacks</h3>
-                <!-- <img src="/images/vuejs.png" alt="Vue Logo" class="main__techlogo vuejs">
-                <img src="/images/wagtail.svg" alt="Wagtail Logo" class="main__techlogo">
-                <img src="/images/django-logo-positive.png" alt="Django logo" class="main__techlogo ">
-                <img src="/images/Flask_logo.svg" alt="Flask logo" class="main__techlogo ">
-                <img src="/images/python-logo-master-v3-TM-flattened.png" alt="Python Logo" class="main__techlogo ">
-                <img src="/images/ubuntu_orange_hex_su.png" alt="Ubuntu Logo" class="main__techlogo">
-                <img src="/images/postgresql-horizontal.svg" alt="PostgreSQL Logo" class="main__techlogo postgres">
-                <img src="/images/DO_Logo_Horizontal_Blue.png" alt="DigitalOcean Logo" class="main__techlogo "> -->
-                <h6>Vue</h6>
-                <h6>Django</h6>
-                <h6>Wagtail CMS</h6>
-                <h6>Python</h6>
-                <h6>Ubuntu</h6>
-                <h6>PostgreSQL</h6>
-                <h6>DigitalOcean</h6>
+                
+                <div class="main__services">
+                    
+
+                    <!-- <h6>UX/UI Design</h6>
+                        <ul>
+                            <li>User Research</li>
+                            <li></li>
+                            <li></li>
+                        </ul> -->
+                       
+                    <h6>Web Development</h6>
+                        <ul>
+                            <li>Vue</li>
+                            <li>Django</li>
+                            <li>Wagtail</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    <h6>Support and Service</h6>
+                        <ul>
+                            <li>Maintenance</li>
+                            <li>Hosting</li>
+                            <li>Scaling</li>
+                        </ul>
+                    
+                    
+                </div>
+                <div class="main__services">
+                    <h6>Staff Augmentation</h6>
+                    <p>
+                        We are store managers, project managers, operations specialists, sales reps, customer service agents, 
+                        and small business owners. Throughout our passion for problem solving has been a core competency and 
+                        key to our success. We lean on the simplicity and extensibility of Python and Javascript to provide 
+                        agile solutions to our clients' business needs.
+                        
+                    </p>
+                    
+                    <!-- <h1>Our Tech Stacks</h1> -->
+                    <!-- <img src="/images/vuejs.png" alt="Vue Logo" class="main__techlogo vuejs">
+                    <img src="/images/wagtail.svg" alt="Wagtail Logo" class="main__techlogo">
+                    <img src="/images/django-logo-positive.png" alt="Django logo" class="main__techlogo ">
+                    <img src="/images/Flask_logo.svg" alt="Flask logo" class="main__techlogo ">
+                    <img src="/images/python-logo-master-v3-TM-flattened.png" alt="Python Logo" class="main__techlogo ">
+                    <img src="/images/ubuntu_orange_hex_su.png" alt="Ubuntu Logo" class="main__techlogo">
+                    <img src="/images/postgresql-horizontal.svg" alt="PostgreSQL Logo" class="main__techlogo postgres">
+                    <img src="/images/DO_Logo_Horizontal_Blue.png" alt="DigitalOcean Logo" class="main__techlogo "> -->
+                    <!-- <h6>Vue</h6>
+                    <h6>Django</h6>
+                    <h6>Wagtail CMS</h6>
+                    <h6>Python</h6>
+                    <h6>Ubuntu</h6>
+                    <h6>PostgreSQL</h6>
+                    <h6>DigitalOcean</h6>
+                </div> -->
             </section>
             <section class="main__contact">
                 <h1 class="main__formtitle">Contact</h1>
+                <div class="main__alert alert">Your message has been sent</div>
                 <form id="contactForm" class="main__contactform">
                     <p class="main__name-field">
                       <label>First Name <span>*</span></label>
-                      <input type="text" name="name" id="name" required>
+                      <input type="text" name="firstname" id="firstname" required>
                     </p>
                     <p class="main__company-field">
                       <label>Last Name <span>*</span></label>
-                      <input type="text" name="company" id="company">
+                      <input type="text" name="lastname" id="lastname">
                     </p>
                     <p class="main__email-field">
                       <label>Email <span>*</span></label>
@@ -183,7 +213,12 @@
                     </p>
                     <p class="main__required-field">Required field <span>*</span></p>
                     <p class="main__submit-button">
-                      <button class="main__button" type="submit">Submit</button>
+                        
+                      <button class="main__button g-recaptcha" 
+                        type="submit" 
+                        data-sitekey="6LfzRZsaAAAAAKOpvtBWopWUkcAiySQQm6Sqbf1r" 
+                        data-callback='onSubmit' 
+                        data-action='submit'>Submit</button>
                     </p>
                   </form>
                 
@@ -199,6 +234,19 @@
             <h4 >devteam@origma.io</h4>
         </div>
     </footer>
-    <script src="./main.js"></script>
+    
+    
+
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+<script src="./main.js"></script>
+
 </body>
 </html>

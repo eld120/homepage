@@ -1,14 +1,21 @@
-// Initialize Firebase
-var config = {
-    apiKey: "",
-    //authDomain: "contactform-2086d.firebaseapp.com",
-    //databaseURL: "https://contactform-2086d.firebaseio.com",
-    //projectId: "contactform-2086d",
-    //storageBucket: "contactform-2086d.appspot.com",
-    //messagingSenderId: "35839015044"
+ // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyDiMWoQOkpLGyDZWT3TqZ_KKStbDowK2yM",
+    authDomain: "ori-17205.firebaseapp.com",
+    databaseURL: "https://ori-17205-default-rtdb.firebaseio.com",
+    projectId: "ori-17205",
+    storageBucket: "ori-17205.appspot.com",
+    messagingSenderId: "652443814473",
+    appId: "1:652443814473:web:669100b0e3aaf739fd8d98",
+    measurementId: "G-BQ66QHJVWF"
   };
-  firebase.initializeApp(config);
-  
+firebase.initializeApp(firebaseConfig);
+
+  //recaptcha callback function
+  function onSubmit(token) {
+    document.getElementById("contactForm").submit();
+  }
+
   // Reference messages collection
   var messagesRef = firebase.database().ref('messages');
   
@@ -20,14 +27,14 @@ var config = {
     e.preventDefault();
   
     //Get value
-    var name = getInputVal('name');
-    var company = getInputVal('company');
+    var firstname = getInputVal('firstname');
+    var lastname = getInputVal('lastname');
     var email = getInputVal('email');
-    var phone = getInputVal('phone');
+    var company = getInputVal('company');
     var message = getInputVal('message');
   
     // Save message
-    saveMessage(name, company, email, phone, message);
+    saveMessage(firstname, lastname, email, company, message);
   
     // Show alert
     document.querySelector('.alert').style.display = 'block';
@@ -47,14 +54,14 @@ var config = {
   }
   
   // Save message to firebase
-  function saveMessage(name, company, email, phone, message){
+  function saveMessage(firstname, lastname, email, company, message){
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
-      name: name,
-      company: company,
-      email: email,
-      phone: phone,
-      message: message
+        firstname: firstname,
+        lastname: lastname,
+        email: email,
+        company: company,
+        message: message
     });
   }
   
